@@ -1,0 +1,19 @@
+{
+  "name": "@app/database",
+  "version": "0.2.0",
+  "description": "App Database Migration",
+  "main": "index.js",
+  "author": "tin.luong <nittn3@gmail.com>",
+  "private": true,
+  "scripts": {
+    "seed": "export NODE_ENV=development && node seeds/run.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "dotenv": "^8.0.0",
+    "mongodb": "^3.5.8",
+    "npmlog": "^6.0.0",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {}
+}

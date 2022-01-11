@@ -1,0 +1,36 @@
+{
+  "name": "codeleap",
+  "version": "0.1.0",
+  "description": "codeleap homework",
+  "main": "index.js",
+  "repository": "git@github.com:nitkull/codeleap",
+  "author": "Tin.Luong <nittn3@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/ts-jest",
+      "**/ts-jest/**",
+      "**/ts-node",
+      "**/ts-node/**",
+      "**/jest",
+      "**/jest/**",
+      "**/@types/jest",
+      "**/@types/jest/**",
+      "**/@types/node",
+      "**/@types/node/**"
+    ]
+  },
+  "scripts": {
+    "ci": "git-cz",
+    "commit": "git-cz",
+    "serve:backend": "yarn workspace @app/backend run serve",
+    "migrate:dev": "yarn workspace @app/database run migrate"
+  },
+  "devDependencies": {
+    "git-cz": "^4.3.1"
+  }
+}

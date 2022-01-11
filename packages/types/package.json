@@ -1,0 +1,13 @@
+{
+  "name": "@app/types",
+  "version": "0.2.0",
+  "private": true,
+  "author": {
+    "name": "tin.luong",
+    "email": "nittn3@gmail.com"
+  },
+  "devDependencies": {
+    "moleculer": "^0.14.5"
+  },
+  "type": "index.d.ts"
+}
